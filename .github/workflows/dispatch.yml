@@ -1,4 +1,4 @@
-name: Android CI
+name: Dispatch event
 on:
   workflow_dispatch:
   push:
@@ -6,15 +6,13 @@ on:
       - main
 jobs:
   build:
-    name: Run task
+    name: Run dispatch task
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Build
-        run: ./gradlew build
-      - name: Dispatch
+      - name: Dispatch action
         run: |
-          echo "running tasks"
+          echo "dispatching event"
           sleep 5s
 
