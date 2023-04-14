@@ -1,18 +1,9 @@
-name: Dispatch event
+name: Deploy
+
 on:
   workflow_dispatch:
   push:
     branches:
       - main
-jobs:
-  build:
-    name: Run dispatch task
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v1
-      - name: Dispatch action
-        run: |
-          echo "dispatching event"
-          sleep 5s
 
+#"https://utensils.io/articles/trigger-github-actions-from-another-repo""
