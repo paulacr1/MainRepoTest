@@ -8,8 +8,9 @@ on:
 
 jobs:
   job_1:
+    runs-on: ubuntu-latest
     steps:
-      run: echo "deploy dispatch"
+      - run: echo "deploy dispatch"
 
 
 
