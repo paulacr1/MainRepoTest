@@ -12,6 +12,4 @@ jobs:
     steps:
       - run: echo "deploy dispatch"
 
-
-
 #"https://utensils.io/articles/trigger-github-actions-from-another-repo""
